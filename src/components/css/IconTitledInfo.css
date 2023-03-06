@@ -1,0 +1,20 @@
+.IconTitledInfo-div img {
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  align-self: center;
+}
+
+.IconTitledInfo-div {
+  width: 100%;
+}
+
+.IconTitledInfo-div > div {
+  font-size: large;
+  color: white;
+}
+
+.IconTitledInfo-div > div > div {
+  font-size: large;
+  color: black;
+}

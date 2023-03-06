@@ -1,0 +1,13 @@
+.infotitle-green {
+  color: rgb(117, 188, 11);
+}
+
+.infotitle div {
+  width: 100px;
+  border-bottom: 4px solid rgb(254, 172, 21);
+}
+
+.infotitle-sm div {
+  width: 70px;
+  border-bottom: 4px solid rgb(254, 172, 21);
+}

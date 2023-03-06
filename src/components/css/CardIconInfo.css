@@ -1,0 +1,39 @@
+@media (min-width: 576px) {
+  .CardIcon {
+    width: 160px;
+    height: 150px;
+    padding: 5px;
+  }
+
+  .CardIcon-div {
+    width: 240px;
+    padding: 10px;
+  }
+
+  .CardIcon-invisible {
+    width: fit-content;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .CardIcon {
+    width: 170px;
+    height: 160px;
+    padding: 5px;
+  }
+
+  .CardIcon-div {
+    width: 180px;
+    padding: 5px;
+  }
+
+  .CardIcon-invisible {
+    width: fit-content;
+    padding: 5px;
+  }
+}
+
+.cardIconInfo {
+  color: orange;
+}

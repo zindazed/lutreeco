@@ -1,0 +1,20 @@
+.navlink {
+  border: 1px dotted rgb(181, 181, 181);
+  background-color: black;
+  border-radius: 2px;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: x-small;
+}
+
+.navlink:focus,
+.navlink:hover {
+  color: rgb(124, 204, 3);
+}
+
+.navlink-dropdown {
+  background-color: rgb(23, 23, 23);
+}

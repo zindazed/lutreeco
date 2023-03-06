@@ -1,0 +1,28 @@
+@media (max-width: 576px) {
+  .SubTitle-div {
+    background-color: rgb(117, 188, 11);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
+
+  .SubTitle-div * {
+    color: white;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .SubTitle-div {
+    background-color: rgb(117, 188, 11);
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    width: fit-content;
+  }
+
+  .SubTitle-div * {
+    color: white;
+  }
+}

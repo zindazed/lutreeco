@@ -1,0 +1,49 @@
+.footer-div {
+  background-color: black;
+  color: rgb(83, 83, 83);
+}
+
+@media (max-width: 992px) {
+  .footer-row {
+    width: 98%;
+    margin: 30px;
+  }
+
+  .footer-col {
+    margin-top: 20px;
+  }
+
+  .footer-div h3 {
+    margin-top: 20px;
+    color: white;
+    font-size: large;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-row {
+    width: 60%;
+    margin: 30px;
+  }
+
+  .footer-div h3 {
+    margin-top: 20px;
+    color: white;
+    font-size: large;
+  }
+}
+
+.footer-line {
+  width: 60px;
+  border-top: 1px dashed rgb(83, 83, 83);
+  margin-bottom: 15px;
+}
+
+.footer-div ul {
+  list-style: none;
+}
+
+.list1 li,
+.list2 li {
+  margin-bottom: 10px;
+}

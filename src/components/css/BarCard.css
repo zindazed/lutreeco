@@ -1,0 +1,50 @@
+.barCard-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .barCard-div {
+    border-left: 5px solid orange;
+    background-color: white;
+    width: 80%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px 15px;
+  }
+
+  .barCard-tall {
+    height: 240px;
+  }
+
+  .barCard-short {
+    height: 200px;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .barCard-div {
+    border-left: 5px solid orange;
+    background-color: white;
+    width: 400px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px 15px;
+  }
+
+  .barCard-tall {
+    height: 240px;
+  }
+
+  .barCard-short {
+    height: 150px;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+  }
+}
