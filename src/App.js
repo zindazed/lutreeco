@@ -46,7 +46,7 @@ function App() {
         powered and has a permanent water supply. We are a proud member of
         Botanical Gardens Conservation International (BGCI; BGCN# 5390).
       </ParagraphInfo>
-      <div className=" bg-light">
+      <div className="pb-3" style={{ backgroundColor: "#FAFAFA" }}>
         <InfoTitle black="Our core" green="Competencies" />
         <CardImageDiv />
       </div>

@@ -1,12 +1,27 @@
 import React from "react";
-import "./css/CardIconInfo.css";
+// import "./css/CardIconInfo.css";
 
 function CardIconInfo({ icon, children }) {
   return (
-    <div className="CardIcon-invisible mx-auto">
-      <div className="CardIcon-div bg-light rounded card mx-auto mx-xl-0 my-3">
-        <img src={icon} alt="CardImage" className="CardIcon mx-auto" />
-        <h5 className=" text-center cardIconInfo">{children}</h5>
+    <div
+      className="bg-light py-2 py-sm-2 py-xl-3 rounded border border-1 align-content-center flex-wrap d-flex justify-content-center flex-row"
+      style={{ width: "100%" }}
+    >
+      <div className="" style={{ width: "80%" }}>
+        <div
+          className="mx-auto d-flex justify-content-center flex-column"
+          style={{ width: "100%", aspectRatio: "1.5/1" }}
+        >
+          <div className="mx-auto" style={{ width: "fit-content" }}>
+            <img src={icon} alt="CardImage" />
+          </div>
+        </div>
+        <div
+          className="d-flex justify-content-center flex-column"
+          style={{ aspectRatio: "4/1" }}
+        >
+          <h5 className="text-center">{children}</h5>
+        </div>
       </div>
     </div>
   );
