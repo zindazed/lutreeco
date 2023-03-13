@@ -16,7 +16,7 @@ function Dashboard() {
           </div>
         </div>
         <div
-          className="d-lg-none d-flex justify-content-sm-between py-3"
+          className="d-lg-none d-flex justify-content-sm-between py-3 me-5 pe-5"
           style={{ width: "95%" }}
         >
           <Logo image={require("../images/logo.png")} />

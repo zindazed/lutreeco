@@ -4,13 +4,6 @@
   border: none;
 }
 
-.navmenu-btn:active {
-  position: relative;
-  left: 2px;
-  top: 2px;
-  color: green;
-}
-
 .navmenu-dropdown {
   width: 100%;
   background-color: rgb(23, 23, 23);

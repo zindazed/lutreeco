@@ -3,12 +3,16 @@ import "./css/ContactButton.css";
 
 function ContactButton({ children }) {
   return (
-    <div>
+    <div className="mt-2 mt-sm-0">
       <div className="contactButton-div mx-1 d-sm-block d-none">
-        <button className="btn contactButton-md">{children}</button>
+        <a href={`tel:${children}`} className="btn contactButton-md">
+          {children}
+        </a>
       </div>
-      <div className="contactButton-div mt-3 mx-1 d-sm-none">
-        <button className="btn contactButton-sm">{children}</button>
+      <div className="contactButton-div mx-1 d-sm-none">
+        <a href={`tel:${children}`} className="btn contactButton-sm">
+          {children}
+        </a>
       </div>
     </div>
   );

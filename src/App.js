@@ -156,12 +156,15 @@ function App() {
       </BackgroundImage>
       <span id="COMMUNITY"></span>
       <InfoTitle green="Community" />
-      <BackgroundImage image={require("./images/IMG_1313.JPG")}>
+      <BackgroundImage>
         <div>
-          <h2 className=" text-white">
+          <h2 className=" text-light mb-4" style={{ fontWeight: "lighter" }}>
             Community young tree maintenance program (CYTMP)
           </h2>
-          <p className="text-white paragraph2">
+          <p
+            className="text-light paragraph2"
+            style={{ fontWeight: "lighter" }}
+          >
             The CYTMP is a joint initiative between LuTreeCo and local
             subsistence farmers that aims to promote conservation and
             sustainable development. As part of the program, farmers are

@@ -8,10 +8,11 @@ function NavMenu() {
       <div className="dropdown">
         <button
           type="button"
-          className="navmenu-btn float-end"
+          className="navmenu-btn"
           data-bs-toggle="dropdown"
+          style={{ position: "absolute", top: "-10px", right: "0px" }}
         >
-          <i className="fa fa-bars" />
+          <i className="fa fa-bars fa-2x" />
         </button>
         <ul className="dropdown-menu navmenu-dropdown">
           <li>
@@ -24,10 +25,10 @@ function NavMenu() {
             <NavLinkMenu>SERVICES</NavLinkMenu>
             <ul>
               <li>
-                <NavLinkMenu>NATIVE NURSERY</NavLinkMenu>
+                <NavLinkMenu>NATIVE-NURSERY</NavLinkMenu>
               </li>
               <li>
-                <NavLinkMenu>NATIVE FOREST</NavLinkMenu>
+                <NavLinkMenu>NATIVE-FOREST</NavLinkMenu>
               </li>
               <li>
                 <NavLinkMenu>APIARY</NavLinkMenu>

@@ -1,4 +1,4 @@
-.Background-div {
+/* .Background-div {
   position: relative;
   width: 100%;
   height: 800px;
@@ -27,8 +27,5 @@
 }
 
 .Background-color {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-}
+  background-color: rgba(0, 0, 0, 0.4);
+} */
