@@ -1,10 +1,10 @@
 import React from "react";
 import "./css/ParagraphInfo.css";
 
-function ParagraphInfo({ children }) {
+function ParagraphInfo({ children, color }) {
   return (
-    <div className="paragraphinfo">
-      <p>{children}</p>
+    <div className="paragraphinfo me-1">
+      <p style={{ color: color }} >{children}</p>
     </div>
   );
 }

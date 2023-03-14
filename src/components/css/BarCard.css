@@ -1,6 +1,7 @@
 .barCard-title {
   text-align: center;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 576px) {

@@ -9,12 +9,13 @@
   width: 100%;
 }
 
-.IconTitledInfo-div > div {
-  font-size: large;
+.IconTitledInfo-div>div {
+  font-size: 17px;
   color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.IconTitledInfo-div > div > div {
-  font-size: large;
+.IconTitledInfo-div>div>div {
+  font-size: 20px;
   color: black;
 }

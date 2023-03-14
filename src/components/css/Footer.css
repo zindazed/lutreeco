@@ -46,4 +46,7 @@
 .list1 li,
 .list2 li {
   margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: lighter !important;
 }

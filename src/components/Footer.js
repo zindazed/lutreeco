@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer-row row mx-auto">
         <div className=" col-lg-4 footer-col">
           <Logo image={require("../images/logo.png")} />
-          <div className=" mt-3">
+          <div className=" mt-3 paragraph2">
             LuTreeCo is a native African for profit social enterprise that
             conserves trees and shrubs that are native to tropical Africa
             (Native), with emphasis on threatened species.{" "}
@@ -18,7 +18,7 @@ function Footer() {
           <h3>Our Services</h3>
           <div className="footer-line"></div>
           <ul className="list1">
-            <li>All Services</li>
+            {/* <li>All Services</li> */}
             <li>Native nursery</li>
             <li>Native forest</li>
             <li>Apiary</li>

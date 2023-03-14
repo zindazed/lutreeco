@@ -3,7 +3,7 @@ import "./css/ContactButton.css";
 
 function ContactButton({ children }) {
   return (
-    <div className="mt-2 mt-sm-0">
+    <div className="" style={{ marginTop: "3px" }}>
       <div className="contactButton-div mx-1 d-sm-block d-none">
         <a href={`tel:${children}`} className="btn contactButton-md">
           {children}

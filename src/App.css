@@ -1,12 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+
+
+h5,
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: Verdana, sans-serif;
 }
+
 .mySlides {
   display: none;
 }
+
 img {
   vertical-align: middle;
 }
@@ -93,6 +107,7 @@ img {
   from {
     opacity: 0.1;
   }
+
   to {
     opacity: 1;
   }
@@ -100,6 +115,7 @@ img {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
+
   .prev,
   .next,
   .text {
@@ -107,7 +123,20 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+.paragraph {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: lighter !important;
+}
+
+.paragraph2 {
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: lighter !important;
+}
+
+/* @media (min-width: 768px) {
   .paragraph {
     width: 65%;
     font-size: 18px;
@@ -119,14 +148,8 @@ img {
     width: 100%;
     font-size: 18px;
   }
-}
+} */
 
-@media (max-width: 576px) {
-  .paragraph2 {
-    width: 100%;
-    font-size: 12px;
-  }
-}
 
 .bg-slideshow {
   background-color: rgba(0, 0, 0, 0.5);
@@ -139,4 +162,54 @@ img {
   width: 100%;
   height: 100%;
   content: " ";
+}
+
+.d-icon {
+  /* background-color: red; */
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 6px 10px;
+  border-radius: 100px;
+  border: 3px solid white;
+}
+
+.top-icon {
+  /* background-color: red; */
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px 15px;
+  margin: 5px;
+  border: 3px solid white;
+}
+
+.bg-general {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.top-slider {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+@media (min-width: 992px) {
+  .navbar-toggler {
+    border: none !important;
+  }
+
+  #navbarTogglerDemo01 {
+    display: none !important;
+  }
+}
+
+.navbar {
+  background-color: red !important;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }

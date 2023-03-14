@@ -1,6 +1,8 @@
 .contactForm-title {
   font-size: x-large;
-  padding: 15px;
+  padding: 0 0 10px 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 @media (max-width: 992px) {
