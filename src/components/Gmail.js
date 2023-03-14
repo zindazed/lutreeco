@@ -231,24 +231,24 @@
 
 // export default GmailSender;
 
-import React from "react";
-import sendMail from "../gmail";
+// import React from "react";
+// import sendMail from "../gmail";
 
-function MyComponent() {
-  const handleClick = async () => {
-    try {
-      const result = await sendMail();
-      console.log("Email sent...", result);
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
+// function MyComponent() {
+//   const handleClick = async () => {
+//     try {
+//       const result = await sendMail();
+//       console.log("Email sent...", result);
+//     } catch (error) {
+//       console.log(error.message);
+//     }
+//   };
 
-  return (
-    <div>
-      <button onClick={handleClick}>Send Email</button>
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <button onClick={handleClick}>Send Email</button>
+//     </div>
+//   );
+// }
 
-export default MyComponent;
+// export default MyComponent;

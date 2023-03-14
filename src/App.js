@@ -33,17 +33,16 @@ function App() {
       <span id="ABOUT US"></span>
       <InfoTitle black="WHO WE" green="ARE" />
       <ParagraphInfo>
-        LuTreeCo is a native African for profit social enterprise that conserves
-        trees and shrubs that are native to tropical Africa (Native), with
-        emphasis on threatened species. We develop novel value chain that only
-        emerge from, but also support and advance, our conservartion goals by
-        enhancing our ecosystem sustainability, community and education. We aim
-        to raise the profile of biodiversity conservation and restoration in
+        LuTreeCo is an African for-profit social enterprise that conserves trees
+        and shrubs that are native to tropical Africa, with emphasis on
+        threatened species. We develop novel value chains that not only emerge
+        from, but also support and advance, our conservation goals. We will
+        raise the profile of flora biodiversity conservation and restoration in
         tropical Africa.
         <br />
         LuTreeCo is located on an 80 acre site on Bunjakko island, in Uganda,
-        approximately 60 miles from Kampala by road. LuTreeCo is 100% solar
-        powered and has a permanent water supply. We are a proud member of
+        approximately 60 miles from Kampala by road. We are 100% solar powered
+        and have a permanent water supply. LuTreeCo is a proud member of
         Botanical Gardens Conservation International (BGCI; BGCN# 5390).
       </ParagraphInfo>
       <div className="pb-3" style={{ backgroundColor: "#FAFAFA" }}>
@@ -136,13 +135,13 @@ function App() {
       <BackgroundImage image={require("./images/IMG_1313.JPG")}>
         <div>
           <p className="text-white ms-lg-5 ps-lg-4 paragraph">
-            LuTreeCo recognizes the crucial role of bees as a keystone species
-            in maintaining a thriving forest ecosystem. The abundance and
-            diversity of bee species are critical factors in the health of the
-            forest. To support this, the organization manufactures Langstroth
-            hives and traps its own bees. The revenue generated from the apiary
-            will help further its conservation goals and contribute to the
-            overall health of the forest.
+            LuTreeCo recognizes the role of bees as a keystone species critical
+            to the maintenance of a thriving forest ecosystem. An abundant and
+            diverse population of bees is critical to the health of a forest. We
+            manufacture Langstroth hives for honey bees and create appropriate
+            nesting and foraging habitat for other wild bee species. The revenue
+            generated from LuTreeCo's apiary is invested into our conservation
+            activities.
           </p>
         </div>
         <div className="bg-slideshow">
@@ -165,23 +164,18 @@ function App() {
             className="text-light paragraph2"
             style={{ fontWeight: "lighter" }}
           >
-            The CYTMP is a joint initiative between LuTreeCo and local
-            subsistence farmers that aims to promote conservation and
-            sustainable development. As part of the program, farmers are
-            permitted to cultivate annual food crops for their families within
-            the young forest at no cost, while also actively participating in
-            the care and maintenance of the young trees. This not only reduces
-            the cost of weeding but also strengthens the farmers' involvement in
-            conservation efforts. The young trees will eventually mature with in
-            4-5 years thereby make food production untenable, but the CYTMP will
-            have established a positive reputation for LuTreeCo in the local
-            community, which will help ensure the continued success of the
-            project. in terms of increase monitoring of the tree by multiple
-            people. Biannual meetings serve as an educational platform,
-            promoting sustainability and the principles of conservation among
-            the farmers. This collaborative approach to conservation leverages
-            the involvement of local communities, making the CYTMP an innovative
-            and effective solution for promoting sustainable development.
+            The CYTMP is a partnership between LuTreeCo and local subsistence
+            farmers that promotes sustainable conservation. As part of the
+            program, farmers cultivate food crops for their families within
+            LuTreeCo's young forest at no cost to them. In return, they
+            participate in the care and maintenance of the young trees. This not
+            only reduces the costs associated with weeding but also strengthens
+            the farmers' involvement in conservation efforts. As trees grow,
+            crop growing becomes untenable and CYTMP activities relocate to
+            newly planted sites within the forest. LuTreeCo's CYTMP Biannual
+            meetings serve as an educational platform, promoting the principles
+            of conservation among the farmers. This collaboration is an
+            innovative and effective tool for sustainable development.
           </p>
         </div>
         <div className=" bg-slideshow">
@@ -196,33 +190,32 @@ function App() {
       <span id="PUBLIC ADVOCACY"></span>
       <InfoTitle black="Public Advocacy" green="& Conservation Leadership" />
       <ParagraphInfo>
-        LuTreeCo frequently publishes informative content on its Linkedin and
-        Facebook platforms to increase awareness and promote conservation
-        efforts. The company introduces native tree species, detailing their
-        utility and importance, and shares these posts with impactful groups
-        across Africa and beyond. Additionally, LuTreeCo founded and manages the
-        Indigenous Tree and Shrub Species of Uganda Facebook page to further
-        promote conservation and education.
+        LuTreeCo frequently publishes detailed tree and shrub related
+        conservation information on its Linkedin and Facebook platforms in order
+        to increase conservation awareness. These publications include summaries
+        on uncommon native tree species, detailing their utility and importance,
+        and are aimed at promoting planting of these species. Additionally,
+        LuTreeCo founded and manages the Indigenous Tree and Shrub Species of
+        Uganda Facebook page for the same goal of educating the public and
+        promoting conservation.
         <br />
-        LuTreeCo is also a strong advocate for indigenous tree planting and bee
-        farming and works to engage local communities, through its CYTMP and LC1
-        leadership, to promote these initiatives. The company is committed to
-        engaging international organizations in future conservation work and
-        actively seeks opportunities to collaborate on conservation initiatives.
+        LuTreeCo strongly advocates for indigenous tree planting and bee farming
+        within it's works local communities, through CYTMP and local leadership.
+        Furthermore, we are ccommitted to engaging international organisations
+        in research and restoration initiatives through out the region.
       </ParagraphInfo>
       <span id="RESEARCH"></span>
       <InfoTitle green="Research" />
       <ParagraphInfo>
-        LuTreeCo is dedicated to advancing the understanding and preservation of
-        rare tree and shrub species through research. The organization is
-        actively working on developing and optimizing propagation protocols,
-        conducting seed viability tests, and sharing its findings in open-source
-        journals. As part of its ongoing research efforts, LuTreeCo conducts
-        annual ecosystem surveys to track the impact on the plants, insects,
-        mammals, and reptiles in the surrounding environment. Looking ahead, the
-        organization is focused on expanding its research efforts through
-        product development studies, offering internship opportunities, and
-        supporting graduate and undergraduate research.
+        LuTreeCo is dedicated to advancing the understanding of native tree and
+        shrub species through research. We actively test, develop and optimise
+        propagation protocols and will share our findings to the public in
+        open-source journals. As part of our ongoing research, we conduct annual
+        ecosystem surveys in order to track the impact of our activities on the
+        plants, insects, mammals and reptiles around us. Looking ahead, we will
+        expand our research activities into non-destructive product development
+        projects, as well as offer internship, graduate and undergraduate
+        research opportunities on site.
       </ParagraphInfo>
       <span id="CONTACT US"></span>
       <InfoTitle black="Contact" green="Us" />
