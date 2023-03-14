@@ -4,8 +4,8 @@ import React from "react";
 function CardIconInfo({ icon, children }) {
   return (
     <div
-      className="bg-light py-2 py-sm-2 py-xl-3 rounded border border-1 align-content-center flex-wrap d-flex justify-content-center flex-row"
-      style={{ width: "100%" }}
+      className=" py-2 py-sm-2 py-xl-3 rounded border border-1 align-content-center flex-wrap d-flex justify-content-center flex-row"
+      style={{ width: "100%", backgroundColor: "#FAFAFA", }}
     >
       <div className="" style={{ width: "80%" }}>
         <div

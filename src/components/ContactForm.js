@@ -14,11 +14,11 @@ function ContactForm({ title }) {
           <textarea cols="30" rows="7"></textarea>
           <button
             className="d-block contactForm-button"
-            onClick={() => {
-              sendMail()
-                .then((result) => console.log("Email sent...", result))
-                .catch((error) => console.log(error.message));
-            }}
+          // onClick={() => {
+          //   sendMail()
+          //     .then((result) => console.log("Email sent...", result))
+          //     .catch((error) => console.log(error.message));
+          // }}
           >
             Submit
           </button>

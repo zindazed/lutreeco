@@ -3,12 +3,12 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./css/NavLink.css";
 import NavLinkMenu from "./NavMenuLink.js";
 
-function NavLink({ children }) {
+function NavLink({ children, onclick }) {
   return children === "SERVICES" ? (
     <span className="dropdown">
       <a
         href={`#${children}`}
-        className="btn navlink"
+        className="btn navlink w-100"
         data-bs-toggle="dropdown"
       >
         {children}

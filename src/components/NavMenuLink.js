@@ -3,7 +3,7 @@ import "./css/NavMenuLink.css";
 
 function NavLinkMenu({ children }) {
   return (
-    <a className="dropdown-item navmenulink" href={`#${children}`}>
+    <a className="dropdown-item navmenulink w-100 text-center" href={`#${children}`}>
       {children}
     </a>
   );

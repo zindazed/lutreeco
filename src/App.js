@@ -1,9 +1,13 @@
 import "./App.css";
 import React from "react";
 import Slideshow1 from "./components/Slideshow1.js";
-import Slideshow3 from "./components/Slideshow3.js";
+import NurserySlider from "./components/NurserySlider.js";
+import ForestSlider from "./components/ForestSlider.js";
+import ApiarySlider from "./components/ApiarySlider.js";
+import CommunitySlider from "./components/CommunitySlider.js";
 import Dashboard from "./components/Dashboard.js";
 import InfoTitle from "./components/InfoTitle";
+import Space from "./components/Space";
 import ParagraphInfo from "./components/ParagraphInfo";
 import CardImageDiv from "./components/CardImageDiv";
 import CardIconDiv from "./components/CardIconDiv";
@@ -27,11 +31,11 @@ const images = [
 function App() {
   return (
     <div>
-      <span id="HOME"></span>
       <Dashboard />
-      <Slideshow1 images={images} />
+      <span id="HOME"></span>
+      <Slideshow1 images={images} id="topSlider" />
       <span id="ABOUT US"></span>
-      <InfoTitle black="WHO WE" green="ARE" />
+      <InfoTitle black="WHO WE" green="ARE" margin="15px" />
       <ParagraphInfo>
         LuTreeCo is a native African for profit social enterprise that conserves
         trees and shrubs that are native to tropical Africa (Native), with
@@ -46,12 +50,16 @@ function App() {
         powered and has a permanent water supply. We are a proud member of
         Botanical Gardens Conservation International (BGCI; BGCN# 5390).
       </ParagraphInfo>
-      <div className="pb-3" style={{ backgroundColor: "#FAFAFA" }}>
-        <InfoTitle black="Our core" green="Competencies" />
+      <Space height="25px" />
+      <div className="pb-3" style={{ backgroundColor: "#FAFAFA", paddingTop: "15px" }}>
+        <InfoTitle black="Our core" green="Competencies" margin="0px" />
         <CardImageDiv />
       </div>
+      <Space height="25px" />
       <InfoTitle black="Our Defining" green="Strengths" />
+      <Space height="5px" />
       <CardIconDiv />
+      <Space height="25px" />
       <span id="SERVICES"></span>
       <InfoTitle black="Our" green="Services" />
       <span id="NATIVE-NURSERY"></span>
@@ -62,7 +70,7 @@ function App() {
             weight={"normal"}
             icon={require("./images/icons/green/bambotree.png")}
           >
-            threatened species as determined by the international Union for
+            Threatened species as determined by the international Union for
             Conservation of Nature(IUCN), have priority
           </IconInfo>
         </BarCard>
@@ -76,13 +84,8 @@ function App() {
             planting efforts
           </IconInfo>
         </BarCard>
-        <div className=" bg-slideshow">
-          <div className=" d-none d-lg-block mt-4">
-            <Slideshow3 images={images} />
-          </div>
-          <div className=" d-lg-none mt-4">
-            <Slideshow1 display="d-none" height="300px" images={images} />
-          </div>
+        <div className="mt-3">
+          <NurserySlider id="nurserySlider" />
         </div>
       </BackgroundImage>
       <span id="NATIVE-FOREST"></span>
@@ -122,20 +125,15 @@ function App() {
             Meticulous provenance records.
           </IconInfo>
         </BarCard>
-        <div className=" bg-slideshow">
-          <div className=" d-none d-lg-block mt-4">
-            <Slideshow3 images={images} />
-          </div>
-          <div className=" d-lg-none mt-4">
-            <Slideshow1 display="d-none" height="200px" images={images} />
-          </div>
+        <div className="mt-3">
+          <ForestSlider id="forestSlider" />
         </div>
       </BackgroundImage>
       <span id="APIARY"></span>
       <SubInfoTitle>The Apiary</SubInfoTitle>
       <BackgroundImage image={require("./images/IMG_1313.JPG")}>
         <div>
-          <p className="text-white ms-lg-5 ps-lg-4 paragraph">
+          <p className="ms-3 ms-lg-5 ps-lg-4 paragraph">
             LuTreeCo recognizes the crucial role of bees as a keystone species
             in maintaining a thriving forest ecosystem. The abundance and
             diversity of bee species are critical factors in the health of the
@@ -145,25 +143,21 @@ function App() {
             overall health of the forest.
           </p>
         </div>
-        <div className="bg-slideshow">
-          <div className=" d-none d-lg-block mt-4">
-            <Slideshow3 images={images} />
-          </div>
-          <div className=" d-lg-none mt-4">
-            <Slideshow1 display="d-none" height="400px" images={images} />
-          </div>
+        <div className="mt-2">
+          <ApiarySlider id="apiarySlider" />
         </div>
       </BackgroundImage>
+      <Space height="25px" />
       <span id="COMMUNITY"></span>
       <InfoTitle green="Community" />
-      <BackgroundImage>
+      <Space height="10px" />
+      <BackgroundImage image={require("./images/IMG_1313.JPG")}>
         <div>
-          <h2 className=" text-light mb-4" style={{ fontWeight: "lighter" }}>
+          <h3 className=" text-light mb-4 mx-3" style={{ fontWeight: "lighter" }}>
             Community young tree maintenance program (CYTMP)
-          </h2>
+          </h3>
           <p
-            className="text-light paragraph2"
-            style={{ fontWeight: "lighter" }}
+            className="ms-3 ms-lg-5 ps-lg-4 paragraph"
           >
             The CYTMP is a joint initiative between LuTreeCo and local
             subsistence farmers that aims to promote conservation and
@@ -184,17 +178,15 @@ function App() {
             and effective solution for promoting sustainable development.
           </p>
         </div>
-        <div className=" bg-slideshow">
-          <div className=" d-none d-lg-block mt-4">
-            <Slideshow3 images={images} />
-          </div>
-          <div className=" d-lg-none mt-4">
-            <Slideshow1 display="d-none" height="200px" images={images} />
-          </div>
+        <div className="mt-2">
+          <CommunitySlider id="communitySlider" />
         </div>
       </BackgroundImage>
+
       <span id="PUBLIC ADVOCACY"></span>
+      <Space height="25px" />
       <InfoTitle black="Public Advocacy" green="& Conservation Leadership" />
+      <Space height="10px" />
       <ParagraphInfo>
         LuTreeCo frequently publishes informative content on its Linkedin and
         Facebook platforms to increase awareness and promote conservation
@@ -211,7 +203,9 @@ function App() {
         actively seeks opportunities to collaborate on conservation initiatives.
       </ParagraphInfo>
       <span id="RESEARCH"></span>
+      <Space height="20px" />
       <InfoTitle green="Research" />
+      <Space height="10px" />
       <ParagraphInfo>
         LuTreeCo is dedicated to advancing the understanding and preservation of
         rare tree and shrub species through research. The organization is
@@ -225,7 +219,9 @@ function App() {
         supporting graduate and undergraduate research.
       </ParagraphInfo>
       <span id="CONTACT US"></span>
+      <Space height="15px" />
       <InfoTitle black="Contact" green="Us" />
+      <Space height="10px" />
       <div className="row">
         <ContactInfo title={"Contact Information"}>
           <IconTitledInfo

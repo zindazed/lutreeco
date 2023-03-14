@@ -4,7 +4,8 @@
   width: 100%;
   height: 500px;
   overflow: hidden;
-  outline: none; /* remove the default focus outline */
+  outline: none;
+  /* remove the default focus outline */
 }
 
 .slide1-slideshow img {
@@ -50,9 +51,7 @@
   text-align: center;
   width: 100%;
   height: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 170px;
+
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 20px;
@@ -63,6 +62,7 @@
     font-size: large;
   }
 }
+
 .slide1-caption button {
   border: 2px solid white;
   background-color: transparent;
@@ -94,6 +94,7 @@
     -webkit-transform-origin: 50% 16%;
     transform-origin: 50% 16%;
   }
+
   100% {
     -webkit-transform: scale(1.25) translateY(-15px);
     transform: scale(1.25) translateY(-15px);
@@ -101,6 +102,7 @@
     transform-origin: top;
   }
 }
+
 @keyframes kenburns-top {
   0% {
     -webkit-transform: scale(1) translateY(0);
@@ -108,6 +110,7 @@
     -webkit-transform-origin: 50% 16%;
     transform-origin: 50% 16%;
   }
+
   100% {
     -webkit-transform: scale(1.25) translateY(-15px);
     transform: scale(1.25) translateY(-15px);

@@ -4,7 +4,7 @@ import "./css/IconTitledInfo.css";
 function IconTitledInfo({ icon, title, children }) {
   return (
     <div className="IconTitledInfo-div d-flex py-2">
-      <img src={icon} alt="" />
+      <img className="me-4" src={icon} alt="" />
       <div>
         <div>{title}</div>
         {children}

@@ -1,6 +1,8 @@
 .contactInfo-title {
   text-align: center;
   font-size: x-large;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 @media (max-width: 992px) {

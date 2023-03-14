@@ -57,37 +57,64 @@ class Slideshow1 extends Component {
     }
   };
 
+
+
   render() {
+    var height = "";
+    var paddingTop = "";
+    var paddingLeft = "";
+    var paddingRight = "";
+    if (window.innerWidth <= 576) {
+      height = "400px";
+      paddingTop = "100px";
+      paddingLeft = "50px";
+      paddingRight = "50px";
+    } else if (window.innerWidth <= 768) {
+      height = "500px";
+      paddingTop = "130px";
+      paddingLeft = "100px";
+      paddingRight = "100px";
+    } else {
+      height = "600px";
+      paddingTop = "210px";
+      paddingLeft = "200px";
+      paddingRight = "200px";
+    }
     const { currentIndex } = this.state;
     return (
-      <div
-        className="slide1-slideshow"
-        tabIndex="0"
-        onKeyDown={this.handleKeyDown}
-        style={{ height: this.props.height }}
-      >
-        <img
-          src={this.props.images[currentIndex]}
-          style={{ height: this.props.height }}
-          alt="Slideshow"
-          className="kenburns-top"
-        />
-        <div className={`slide1-caption ${this.props.display}`}>
-          <h2 className=" my-4">
-            Building a Comprehensive Flora Conservation Organisation for
-            Tropical Africa, in Tropical Africa
-          </h2>
-          <button>Our Services</button>
+      <div className="w-100" style={{ height: height }}>
+        <div id={this.props.id} className="carousel slide" style={{ height: height }}>
+          <div className="carousel-inner " style={{ height: height }}>
+            {this.props.images.map((image, index) => (
+              <div style={{ backgroundImage: `url(${image})`, height: height }} key={index} className={"top-slider carousel-item " + ((index === 0) ? "active" : "bro")}>
+                {/* <img src={image} className="" alt="..."></img> */}
+              </div>
+            ))}
+            <div style={{
+              paddingTop: paddingTop, paddingLeft: paddingLeft,
+              paddingRight: paddingRight
+            }} className={`slide1-caption ${this.props.display}`}>
+              <h3 className="my-4">
+                Building a Comprehensive Flora Conservation Organisation for
+                Tropical Africa, in Tropical Africa
+              </h3>
+              <button>Our Services</button>
+            </div>
+          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target={"#" + this.props.id} data-bs-slide="prev">
+            <span className="top-icon" aria-hidden="true"><i class="me-1 fa fa-chevron-left"></i></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target={"#" + this.props.id} data-bs-slide="next">
+            <span className="top-icon" aria-hidden="true"><i class="ms-1 fa fa-chevron-right"></i></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
-        <button className="slide1-prev" onClick={this.handlePrevClick}>
-          &#10094;
-        </button>
-        <button className="slide1-next" onClick={this.handleNextClick}>
-          &#10095;
-        </button>
       </div>
     );
   }
 }
 
 export default Slideshow1;
+
+
