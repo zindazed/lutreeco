@@ -19,9 +19,15 @@ function Footer() {
           <div className="footer-line"></div>
           <ul className="list1">
             {/* <li>All Services</li> */}
-            <li>Native nursery</li>
-            <li>Native forest</li>
-            <li>Apiary</li>
+            <li>
+              <a href="#NATIVE-NURSERY">Native nursery</a>
+            </li>
+            <li>
+              <a href="#NATIVE-FOREST">Native forest</a>
+            </li>
+            <li>
+              <a href="#APIARY">Apiary</a>
+            </li>
           </ul>
         </div>
         <div className=" col-lg-4 footer-col">

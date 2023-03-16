@@ -1,7 +1,7 @@
 .contactForm-title {
   font-size: x-large;
   padding: 0 0 10px 30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
@@ -22,6 +22,14 @@
     border: 1px solid rgb(216, 216, 216);
     border-radius: 0px;
     padding-left: 20px;
+  }
+
+  .contactForm-div textarea {
+    width: 100%;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 0px;
+    padding-left: 20px;
+    margin-bottom: 3px;
   }
 
   .contactForm-formdiv {
@@ -71,18 +79,18 @@
     border-radius: 2px;
     padding-left: 20px;
   }
+
+  .contactForm-div textarea {
+    width: 96%;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 0px;
+    padding-left: 20px;
+    margin-bottom: 3px;
+  }
 }
 
 .contactForm-div input::placeholder {
   color: rgb(204, 204, 204);
-}
-
-.contactForm-div textarea {
-  width: 96%;
-  border: 1px solid rgb(216, 216, 216);
-  border-radius: 0px;
-  padding-left: 20px;
-  margin-bottom: 3px;
 }
 
 .contactForm-button {

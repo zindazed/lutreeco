@@ -20,12 +20,23 @@ import ContactInfo from "./components/ContactInfo";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 
-const images = [
-  require("./images/IMG_1310.JPG"),
-  require("./images/IMG_1313.JPG"),
-  require("./images/IMG_1316.JPG"),
-  require("./images/IMG_1319.JPG"),
-  require("./images/IMG_1320.JPG"),
+const homeImages = [
+  // require("./images/Home/crowned hornbill.JPG"),
+  require("./images/Home/EMQB6814.JPG"),
+  // require("./images/Home/Hadada ibis.JPG"),
+  require("./images/Home/IMG_1319.JPG"),
+  require("./images/Home/IMG_1323.JPG"),
+  require("./images/Home/IMG_1648.JPG"),
+  require("./images/Home/IMG_1832.JPG"),
+  require("./images/Home/IMG_1949.JPG"),
+  require("./images/Home/IMG_2292.JPG"),
+  require("./images/Home/IMG_2296.JPG"),
+  require("./images/Home/IMG_2908.JPG"),
+  require("./images/Home/IMG_8259.PNG"),
+  require("./images/Home/IMG_9498.JPG"),
+  require("./images/Home/NIPP6156.JPG"),
+  require("./images/Home/owl.JPG"),
+  // require("./images/Home/Prunus africana.jpeg"),
 ];
 
 function App() {
@@ -33,7 +44,7 @@ function App() {
     <div>
       <Dashboard />
       <span id="HOME"></span>
-      <Slideshow1 images={images} id="topSlider" />
+      <Slideshow1 images={homeImages} id="topSlider" />
       <span id="ABOUT US"></span>
       <InfoTitle black="WHO WE" green="ARE" margin="15px" />
       <ParagraphInfo>
@@ -66,8 +77,8 @@ function App() {
       <InfoTitle black="Our" green="Services" />
       <span id="NATIVE-NURSERY"></span>
       <SubInfoTitle>Dedicated Non-Retail Native Nursery</SubInfoTitle>
-      <BackgroundImage image={require("./images/IMG_1313.JPG")}>
-        <BarCard height={"short"}>
+      <BackgroundImage image={require("./images/Nursery/IMG_1167.JPG")}>
+        <BarCard height={"short"} direction="right">
           <IconInfo
             weight={"normal"}
             icon={require("./images/icons/green/bambotree.png")}
@@ -76,7 +87,7 @@ function App() {
             Conservation of Nature(IUCN), have priority
           </IconInfo>
         </BarCard>
-        <BarCard height={"short"}>
+        <BarCard height={"short"} direction="left">
           <IconInfo
             weight={"normal"}
             icon={require("./images/icons/green/pinetree.png")}
@@ -92,8 +103,12 @@ function App() {
       </BackgroundImage>
       <span id="NATIVE-FOREST"></span>
       <SubInfoTitle>Species-Rich Native Forest</SubInfoTitle>
-      <BackgroundImage image={require("./images/IMG_1313.JPG")}>
-        <BarCard height={"tall"} title={"Planting for Resilience"}>
+      <BackgroundImage image={require("./images/Forest/IAQH3403.JPG")}>
+        <BarCard
+          height={"tall"}
+          direction="right"
+          title={"Planting for Resilience"}
+        >
           <IconInfo
             weight={"light"}
             icon={require("./images/icons/green/circleleaf.png")}
@@ -107,7 +122,11 @@ function App() {
             Some legacy non native trees present.
           </IconInfo>
         </BarCard>
-        <BarCard height={"tall"} title={"Planting for Resilience"}>
+        <BarCard
+          height={"tall"}
+          direction="left"
+          title={"Planting for Resilience"}
+        >
           <IconInfo
             weight={"light"}
             icon={require("./images/icons/green/bambotree.png")}
@@ -133,7 +152,7 @@ function App() {
       </BackgroundImage>
       <span id="APIARY"></span>
       <SubInfoTitle>The Apiary</SubInfoTitle>
-      <BackgroundImage image={require("./images/IMG_1313.JPG")}>
+      <BackgroundImage image={require("./images/apiary/IMG_8256.PNG")}>
         <div>
           <p className="ms-3 ms-lg-5 ps-lg-4 paragraph">
             LuTreeCo recognizes the crucial role of bees as a keystone species
@@ -153,7 +172,7 @@ function App() {
       <span id="COMMUNITY"></span>
       <InfoTitle green="Community" />
       <Space height="10px" />
-      <BackgroundImage image={require("./images/IMG_1313.JPG")}>
+      <BackgroundImage image={require("./images/community/IMG_1157.JPG")}>
         <div>
           <h3
             className=" text-light mb-4 mx-3"
@@ -223,7 +242,7 @@ function App() {
         <ContactInfo title={"Contact Information"}>
           <IconTitledInfo
             title={"location"}
-            icon={require("./images/icons/contact/contact.png")}
+            icon={require("./images/icons/contact/map.png")}
           >
             Bunjakko island, in Uganda, approximately 60 miles from Kampala by
             road.
@@ -236,25 +255,25 @@ function App() {
           </IconTitledInfo>
           <IconTitledInfo
             title={"whatsapp number"}
-            icon={require("./images/icons/contact/contact.png")}
+            icon={require("./images/icons/contact/whatsapp.png")}
           >
             +256758841256
           </IconTitledInfo>
           <IconTitledInfo
             title={"email"}
-            icon={require("./images/icons/contact/contact.png")}
+            icon={require("./images/icons/contact/email.png")}
           >
             lutreeCo@gmail.com
           </IconTitledInfo>
           <IconTitledInfo
             title={"LinkedIn"}
-            icon={require("./images/icons/contact/contact.png")}
+            icon={require("./images/icons/contact/linkedin.png")}
           >
             LutreeCo
           </IconTitledInfo>
           <IconTitledInfo
             title={"Facebook"}
-            icon={require("./images/icons/contact/contact.png")}
+            icon={require("./images/icons/contact/facebook.png")}
           >
             LuTreeCo
           </IconTitledInfo>

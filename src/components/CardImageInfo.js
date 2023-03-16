@@ -13,7 +13,7 @@ class CardImageInfo extends Component {
   flexFont = () => {
     var refDivs = document.getElementById("widthRef");
     this.setState({
-      fontSize: refDivs.offsetWidth * 0.07,
+      fontSize: refDivs.offsetWidth * 0.06,
       circlePadding: refDivs.offsetWidth * 0.027,
     });
   };
@@ -62,6 +62,7 @@ class CardImageInfo extends Component {
               style={{
                 fontSize: `${this.state.fontSize}px`,
                 height: "fit-content",
+                fontWeight: "bolder",
               }}
             >
               {this.props.children}

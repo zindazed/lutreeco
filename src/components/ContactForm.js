@@ -9,6 +9,7 @@ class ContactForm extends Component {
   state = {
     name: "",
     number: "",
+    contact: "",
     subject: "",
     msg: "",
     sent: false,
@@ -23,6 +24,12 @@ class ContactForm extends Component {
   handleNumber = (e) => {
     this.setState({
       number: e.target.value,
+    });
+  };
+
+  handleContact = (e) => {
+    this.setState({
+      contact: e.target.value,
     });
   };
 
@@ -44,6 +51,7 @@ class ContactForm extends Component {
     let data = {
       name: this.state.name,
       number: this.state.number,
+      contact: this.state.contact,
       subject: this.state.subject,
       msg: this.state.msg,
     };
@@ -60,6 +68,14 @@ class ContactForm extends Component {
       )
       .catch(() => {
         console.log("message not sent");
+        this.setState({
+          sent: 0,
+        });
+        setTimeout(() => {
+          this.setState({
+            sent: false,
+          });
+        }, 3000);
       });
   };
 
@@ -68,6 +84,7 @@ class ContactForm extends Component {
     this.setState({
       name: "",
       number: "",
+      contact: "",
       subject: "",
       msg: "",
     });
@@ -91,6 +108,7 @@ class ContactForm extends Component {
               placeholder="Your Name*"
               value={this.state.name}
               onChange={this.handleName}
+              required
             />
             <input
               type="text"
@@ -98,13 +116,15 @@ class ContactForm extends Component {
               placeholder="Phone Number*"
               value={this.state.number}
               onChange={this.handleNumber}
+              required
             />
             <input
               type="text"
               name="subject"
-              placeholder="Subject"
+              placeholder="Subject*"
               value={this.state.subject}
               onChange={this.handleSubject}
+              required
             />
             <textarea
               name="msg"
@@ -114,8 +134,16 @@ class ContactForm extends Component {
               value={this.state.msg}
               onChange={this.handleMsg}
             ></textarea>
-            <p className={this.state.sent ? "d-block text-success" : "d-none"}>
-              Message Sent
+            <p
+              className={
+                this.state.sent
+                  ? "d-block text-success text-center"
+                  : this.state.sent === 0
+                  ? "d-block text-danger text-center"
+                  : "d-none"
+              }
+            >
+              {this.state.sent === 0 ? "Server Down" : "Message Sent"}
             </p>
             <button type="submit" className="d-block contactForm-button">
               Submit

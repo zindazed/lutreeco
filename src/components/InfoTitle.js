@@ -3,8 +3,8 @@ import "./css/InfoTitle.css";
 
 function InfoTitle({ black, green, margin }) {
   return (
-    <div style={{ marginTop: margin }}>
-      <h2 className="infotitle text-center d-none d-md-block">
+    <div style={{ marginTop: margin }} data-aos="fade-down">
+      <h2 className="infotitle text-center d-none d-md-block fade-down">
         <span className="infotitle-black">{black} </span>
         <span className="infotitle-green">{green}</span>
         <div className="mx-auto my-2"></div>

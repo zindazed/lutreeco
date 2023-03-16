@@ -46,7 +46,16 @@
 .list1 li,
 .list2 li {
   margin-bottom: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: rgba(255, 255, 255, 0.2);
   font-weight: lighter !important;
+}
+
+.list1 li a {
+  text-decoration: none;
+}
+
+.list1 li a:visited,
+.list1 li a:link {
+  color: rgb(83, 83, 83);
 }

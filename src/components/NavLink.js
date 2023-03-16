@@ -8,7 +8,7 @@ function NavLink({ children, onclick }) {
     <span className="dropdown">
       <a
         href={`#${children}`}
-        className="btn navlink w-100"
+        className="btn navlink navlinks"
         data-bs-toggle="dropdown"
       >
         {children}

@@ -1,3 +1,9 @@
+@media (max-width: 991px) {
+  .navlinks {
+    width: 100%;
+  }
+}
+
 .navlink {
   border: 1px solid rgb(181, 181, 181);
   background-color: black;
@@ -8,7 +14,7 @@
   padding-left: 20px;
   padding-right: 20px;
   font-size: x-small;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navlink:focus,

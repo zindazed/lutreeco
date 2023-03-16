@@ -5,7 +5,7 @@ function CardIconInfo({ icon, children }) {
   return (
     <div
       className=" py-2 py-sm-2 py-xl-3 rounded border border-1 align-content-center flex-wrap d-flex justify-content-center flex-row"
-      style={{ width: "100%", backgroundColor: "#FAFAFA", }}
+      style={{ width: "100%", backgroundColor: "#FAFAFA" }}
     >
       <div className="" style={{ width: "80%" }}>
         <div
@@ -20,7 +20,12 @@ function CardIconInfo({ icon, children }) {
           className="d-flex justify-content-center flex-column"
           style={{ aspectRatio: "4/1" }}
         >
-          <h5 className="text-center">{children}</h5>
+          <h5
+            className="text-center"
+            style={{ color: "orange", fontWeight: "bolder" }}
+          >
+            {children}
+          </h5>
         </div>
       </div>
     </div>

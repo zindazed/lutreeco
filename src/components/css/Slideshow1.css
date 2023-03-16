@@ -63,11 +63,16 @@
   }
 }
 
-.slide1-caption button {
+.slide1-caption a {
   border: 2px solid white;
   background-color: transparent;
   color: white;
   padding: 10px;
+  text-decoration: none;
+}
+
+.slide1-caption a:visited {
+  color: white;
 }
 
 .kenburns-top {
