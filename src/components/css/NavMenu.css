@@ -1,0 +1,17 @@
+.navmenu-btn {
+  background-color: transparent;
+  padding: 15px;
+  border: none;
+}
+
+.navmenu-dropdown {
+  width: 100%;
+  background-color: rgb(23, 23, 23);
+}
+
+.navmenu {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 100%;
+}

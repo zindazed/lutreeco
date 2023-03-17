@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.infotitle-green {
+  color: rgb(117, 188, 11);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+.infotitle-black {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+.infotitle div {
+  width: 100px;
+  border-bottom: 4px solid rgb(254, 172, 21);
+}
+
+.infotitle-sm div {
+  width: 70px;
+  border-bottom: 4px solid rgb(254, 172, 21);
+}

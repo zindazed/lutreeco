@@ -1,0 +1,36 @@
+/* .CardImage {
+  width: 170px;
+  height: 160px;
+  border: 3px solid rgb(104, 168, 7);
+  padding: 6px;
+  margin-bottom: 10px;
+}
+
+.CardImage-div {
+  width: 240px;
+  height: 270px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+} */
+/* 
+@media (max-width: 576px) { */
+/* .CardImage {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.CardImage-div {
+  width: 300px;
+  height: 322px;
+  border-radius: 15px;
+} */
+/* } */
+
+/* .CardImage-invisible {
+  width: fit-content;
+  padding: 15px;
+} */

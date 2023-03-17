@@ -1,0 +1,32 @@
+.contactInfo-title {
+  text-align: center;
+  font-size: x-large;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .contactInfo-div {
+    background-color: rgb(253, 180, 44);
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contactInfo-div {
+    background-color: rgb(253, 180, 44);
+    width: 50%;
+    padding: 5px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 60px;
+  }
+}
