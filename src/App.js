@@ -22,20 +22,10 @@ import Footer from "./components/Footer";
 
 const homeImages = [
   // require("./images/Home/crowned hornbill.JPG"),
-  require("./images/Home/EMQB6814.JPG"),
+  require("./images/Home/IMG_2734.JPG"),
   // require("./images/Home/Hadada ibis.JPG"),
-  require("./images/Home/IMG_1319.JPG"),
-  require("./images/Home/IMG_1323.JPG"),
-  require("./images/Home/IMG_1648.JPG"),
-  require("./images/Home/IMG_1832.JPG"),
-  require("./images/Home/IMG_1949.JPG"),
-  require("./images/Home/IMG_2292.JPG"),
-  require("./images/Home/IMG_2296.JPG"),
-  require("./images/Home/IMG_2908.JPG"),
-  require("./images/Home/IMG_8259.PNG"),
-  require("./images/Home/IMG_9498.JPG"),
-  require("./images/Home/NIPP6156.JPG"),
-  require("./images/Home/owl.JPG"),
+  require("./images/Home/IMG_3290.JPG"),
+  require("./images/Home/IMG_7312.JPG"),
   // require("./images/Home/Prunus africana.jpeg"),
 ];
 
@@ -77,7 +67,7 @@ function App() {
       <InfoTitle black="Our" green="Services" />
       <span id="NATIVE-NURSERY"></span>
       <SubInfoTitle>Dedicated Non-Retail Native Nursery</SubInfoTitle>
-      <BackgroundImage image={require("./images/Nursery/IMG_1167.JPG")}>
+      <BackgroundImage image={require("./images/Home/IMG_7312.JPG")}>
         <BarCard height={"short"} direction="right">
           <IconInfo
             weight={"normal"}
@@ -103,7 +93,7 @@ function App() {
       </BackgroundImage>
       <span id="NATIVE-FOREST"></span>
       <SubInfoTitle>Species-Rich Native Forest</SubInfoTitle>
-      <BackgroundImage image={require("./images/Forest/IAQH3403.JPG")}>
+      <BackgroundImage image={require("./images/Home/IMG_2734.JPG")}>
         <BarCard
           height={"tall"}
           direction="right"
@@ -152,7 +142,7 @@ function App() {
       </BackgroundImage>
       <span id="APIARY"></span>
       <SubInfoTitle>The Apiary</SubInfoTitle>
-      <BackgroundImage image={require("./images/apiary/IMG_8256.PNG")}>
+      <BackgroundImage image={require("./images/Home/IMG_3290.JPG")}>
         <div>
           <p className="ms-3 ms-lg-5 ps-lg-4 paragraph">
             LuTreeCo recognizes the crucial role of bees as a keystone species

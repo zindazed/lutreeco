@@ -9,12 +9,16 @@ function CardIconInfo({ icon, children }) {
     >
       <div className="" style={{ width: "80%" }}>
         <div
-          className="mx-auto d-flex justify-content-center flex-column"
-          style={{ width: "100%", aspectRatio: "1.5/1" }}
+          className="mx-auto d-flex justify-content-center align-items-center"
+          style={{ height: "120px" }}
         >
-          <div className="mx-auto" style={{ width: "fit-content" }}>
-            <img src={icon} alt="CardImage" />
-          </div>
+          {/* <div className="mx-auto" style={{ width: "fit-content" }}> */}
+          <img
+            style={{ width: "100px", height: "100px" }}
+            src={icon}
+            alt="CardImage"
+          />
+          {/* </div> */}
         </div>
         <div
           className="d-flex justify-content-center flex-column"
@@ -22,7 +26,7 @@ function CardIconInfo({ icon, children }) {
         >
           <h5
             className="text-center"
-            style={{ color: "orange", fontWeight: "bolder" }}
+            style={{ color: "orange", fontSize: "17px", fontWeight: "bold" }}
           >
             {children}
           </h5>

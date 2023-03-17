@@ -106,11 +106,23 @@ class Slideshow1 extends Component {
               }}
               className={`slide1-caption ${this.props.display}`}
             >
-              <h3 className="my-4">
+              <h3 className="my-4" data-aos="fade-up" data-aos-duration="1500">
                 Building a Comprehensive Flora Conservation Organisation for
                 Tropical Africa, in Tropical Africa
               </h3>
-              <a href="#SERVICES">Our Services</a>
+              <div
+                className="text-center"
+                data-aos="fade-down"
+                data-aos-duration="1500"
+              >
+                <a
+                  href="#SERVICES"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
+                  Our Services
+                </a>
+              </div>
             </div>
           </div>
           <button
@@ -118,6 +130,8 @@ class Slideshow1 extends Component {
             type="button"
             data-bs-target={"#" + this.props.id}
             data-bs-slide="prev"
+            data-aos="slide-right"
+            data-aos-duration="1500"
           >
             <span className="top-icon" aria-hidden="true">
               <i class="me-1 fa fa-chevron-left"></i>
@@ -129,6 +143,8 @@ class Slideshow1 extends Component {
             type="button"
             data-bs-target={"#" + this.props.id}
             data-bs-slide="next"
+            data-aos="slide-left"
+            data-aos-duration="1500"
           >
             <span className="top-icon" aria-hidden="true">
               <i class="ms-1 fa fa-chevron-right"></i>
