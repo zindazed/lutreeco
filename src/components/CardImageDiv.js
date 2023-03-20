@@ -5,19 +5,19 @@ import "./css/CardImageDiv.css";
 const cards = [
   {
     image: require("../images/1.png"),
-    text: "A seed procurement network",
+    text: "A seed procurement network.",
   },
   {
     image: require("../images/2.png"),
-    text: "A seed bank, including freezing capacity (off site)",
+    text: "A seed bank, including freezing capacity (off site).",
   },
   {
     image: require("../images/3.png"),
-    text: "Dedicated non-retail native tree nursery",
+    text: "A dedicated non-retail native tree nursery.",
   },
   {
     image: require("../images/4.png"),
-    text: "Species-rich native forest",
+    text: "A species rich native forest of future mother trees.",
   },
   {
     image: require("../images/5.png"),

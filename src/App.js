@@ -38,14 +38,14 @@ function App() {
       <span id="ABOUT US"></span>
       <InfoTitle black="WHO WE" green="ARE" margin="15px" />
       <ParagraphInfo>
-        LuTreeCo is an African for-profit social enterprise that conserves trees
+        Lukango Tree Conservancy Limited (LuTreeCo) is an African social enterprise that conserves trees
         and shrubs that are native to tropical Africa, with emphasis on
         threatened species. We develop novel value chains that not only emerge
         from, but also support and advance, our conservation goals. We will
         raise the profile of flora biodiversity conservation and restoration in
         tropical Africa.
         <br />
-        LuTreeCo is located on an 80 acre site on Bunjakko island, in Uganda,
+        LuTreeCo is located on Bunjako island, in Uganda,
         approximately 60 miles from Kampala by road. We are 100% solar powered
         and have a permanent water supply. LuTreeCo is a proud member of
         Botanical Gardens Conservation International (BGCI; BGCN# 5390).
@@ -66,7 +66,7 @@ function App() {
       <span id="SERVICES"></span>
       <InfoTitle black="Our" green="Services" />
       <span id="NATIVE-NURSERY"></span>
-      <SubInfoTitle>Dedicated Non-Retail Native Nursery</SubInfoTitle>
+      <SubInfoTitle>A dedicated Non-Retail Native Nursery.</SubInfoTitle>
       <BackgroundImage image={require("./images/Home/IMG_7312.JPG")}>
         <BarCard height={"short"} direction="right">
           <IconInfo
@@ -74,7 +74,7 @@ function App() {
             icon={require("./images/icons/green/bambotree.png")}
           >
             Threatened species as determined by the international Union for
-            Conservation of Nature(IUCN), have priority
+            Conservation of Nature (IUCN), have priority.
           </IconInfo>
         </BarCard>
         <BarCard height={"short"} direction="left">
@@ -82,9 +82,9 @@ function App() {
             weight={"normal"}
             icon={require("./images/icons/green/pinetree.png")}
           >
-            Mature seedlings are either grown on site in our species-rich forest
-            or will be utilized in regeneration and LuTreeCo driven community
-            planting efforts
+            Mature seedlings are planted either 
+            on site in our species-rich forest of future 
+            mother trees or are utilized in LuTreeCo driven community planting efforts.
           </IconInfo>
         </BarCard>
         <div className="mt-3">
@@ -92,7 +92,7 @@ function App() {
         </div>
       </BackgroundImage>
       <span id="NATIVE-FOREST"></span>
-      <SubInfoTitle>Species-Rich Native Forest</SubInfoTitle>
+      <SubInfoTitle>A species rich native forest of future mother trees.</SubInfoTitle>
       <BackgroundImage image={require("./images/Home/IMG_2734.JPG")}>
         <BarCard
           height={"tall"}
@@ -103,7 +103,7 @@ function App() {
             weight={"light"}
             icon={require("./images/icons/green/circleleaf.png")}
           >
-            15 aces, will grow to 70
+            15 aces, will grow to 70.
           </IconInfo>
           <IconInfo
             weight={"light"}
@@ -121,13 +121,13 @@ function App() {
             weight={"light"}
             icon={require("./images/icons/green/bambotree.png")}
           >
-            Threatened: 5 copies per provenance; 3 to 5 provenances.
+            Threatened: 5 trees per provenance; 3 to 5 provenances.
           </IconInfo>
           <IconInfo
             weight={"light"}
             icon={require("./images/icons/green/pinetree.png")}
           >
-            Least concern: 5 copies per species
+            Least concern: 5 trees per species.
           </IconInfo>
           <IconInfo
             weight={"light"}
@@ -234,38 +234,37 @@ function App() {
             title={"location"}
             icon={require("./images/icons/contact/map.png")}
           >
-            Bunjakko island, in Uganda, approximately 60 miles from Kampala by
-            road.
+            Ssenyendo, Bunjako Island, Buwama, Mpigi.
           </IconTitledInfo>
           <IconTitledInfo
             title={"phone number"}
             icon={require("./images/icons/contact/contact.png")}
           >
-            +256758841256
+            +256 702979791
           </IconTitledInfo>
           <IconTitledInfo
             title={"whatsapp number"}
             icon={require("./images/icons/contact/whatsapp.png")}
           >
-            +256758841256
+            +15157450092
           </IconTitledInfo>
           <IconTitledInfo
             title={"email"}
             icon={require("./images/icons/contact/email.png")}
           >
-            lutreeCo@gmail.com
+            <h6 className="email">lukangotreeconservancy@gmail.com</h6>
           </IconTitledInfo>
           <IconTitledInfo
             title={"LinkedIn"}
             icon={require("./images/icons/contact/linkedin.png")}
           >
-            LutreeCo
+            <a className="about_link" target="_blank" href="https://www.linkedin.com/company/lukango-tree-conservancy-lutreeco/">lukango-tree-conservancy-lutreeco</a>
           </IconTitledInfo>
           <IconTitledInfo
             title={"Facebook"}
             icon={require("./images/icons/contact/facebook.png")}
           >
-            LuTreeCo
+            <a className="about_link" target="_blank" href="https://www.facebook.com/LuTreeCo">LutreeCo</a>
           </IconTitledInfo>
         </ContactInfo>
         <ContactForm title={"Send us a Message"} />

@@ -21,7 +21,7 @@ function Dashboard() {
         <Logo image={require("../images/logo.png")} />
         <div className="d-flex ">
           <Nav />
-          <ContactButton>+257854412563</ContactButton>
+          <ContactButton>+256702979791</ContactButton>
           {/* <div className="bg-warning" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01">
               <i className="fa fa-bars" style={{ fontSize: "45px" }}></i>
             </div> */}

@@ -209,3 +209,23 @@ img {
   background-color: red !important;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+.about_link{
+  color: white;
+  transition: 0.5s;
+}
+
+.about_link:hover{
+  color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.email{
+  font-size: 13px;
+}
+
+@media (min-width: 767px) {
+  .email{
+    font-size: 17px;
+  }
+}

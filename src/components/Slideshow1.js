@@ -108,7 +108,7 @@ class Slideshow1 extends Component {
             >
               <h3 className="my-4" data-aos="fade-up" data-aos-duration="1500">
                 Building a Comprehensive Flora Conservation Organisation for
-                Tropical Africa, in Tropical Africa
+                Tropical Africa, in Tropical Africa.
               </h3>
               <div
                 className="text-center"

@@ -35,11 +35,10 @@ function Footer() {
           <div className="footer-line"></div>
           <ul className="list2">
             <li>
-              Bunjakko island, in Uganda, approximately 60 miles from Kampala by
-              road.
+            Ssenyendo, Bunjako Island, Buwama, Mpigi.
             </li>
-            <li>+ 256412253584</li>
-            <li>info@lutreeCo.com</li>
+            <li>+256 702979791</li>
+            <li>lukangotreeconservancy@gmail.com</li>
             <li>Mon-Sun - 9am until 6pm</li>
           </ul>
         </div>
