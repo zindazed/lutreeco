@@ -1,10 +1,7 @@
 import "./App.css";
 import React from "react";
 import Slideshow1 from "./components/Slideshow1.js";
-import NurserySlider from "./components/NurserySlider.js";
-import ForestSlider from "./components/ForestSlider.js";
-import ApiarySlider from "./components/ApiarySlider.js";
-import CommunitySlider from "./components/CommunitySlider.js";
+import Slideshow3 from "./components/Slideshow3.js";
 import Dashboard from "./components/Dashboard.js";
 import InfoTitle from "./components/InfoTitle";
 import Space from "./components/Space";
@@ -21,12 +18,61 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 
 const homeImages = [
-  // require("./images/Home/crowned hornbill.JPG"),
   require("./images/Home/IMG_2734.JPG"),
-  // require("./images/Home/Hadada ibis.JPG"),
   require("./images/Home/IMG_3290.JPG"),
   require("./images/Home/IMG_7312.JPG"),
-  // require("./images/Home/Prunus africana.jpeg"),
+];
+
+const forestImages = [
+  require("./images/Forest/forest1.jpg"),
+  require("./images/Forest/forest2.jpg"),
+  require("./images/Forest/forest3.jpg"),
+  require("./images/Forest/forest4.jpg"),
+  require("./images/Forest/BielschmediaUgandesnis.JPG"),
+  require("./images/Forest/bielscmeidia.JPG"),
+  require("./images/Forest/fruit.JPG"),
+  require("./images/Forest/IMG_1507.JPG"),
+  require("./images/Forest/IMG_1574.JPG"),
+  require("./images/Forest/IMG_1584.JPG"),
+  require("./images/Forest/IMG_1416.JPG"),
+  require("./images/Forest/IMG_1426.JPG"),
+  require("./images/Forest/IMG_1506.JPG"),
+];
+
+const nurseryImages = [
+  require("./images/Nursery/IMG_1169.JPG"),
+  require("./images/Nursery/IMG_1170.JPG"),
+  require("./images/Nursery/IMG_1172.JPG"),
+  require("./images/Nursery/IMG_1173.JPG"),
+  require("./images/Nursery/IMG_1177.JPG"),
+  require("./images/Nursery/IMG_1178.JPG"),
+  require("./images/Nursery/IMG_1180.JPG"),
+  require("./images/Nursery/IMG_1283.JPG"),
+  require("./images/Nursery/IMG_1359.JPG"),
+];
+
+const apiaryImages = [
+  require("./images/apiary/IMG_1258.JPG"),
+  require("./images/apiary/IMG_1354.JPG"),
+  require("./images/apiary/IMG_1305.JPG"),
+  require("./images/apiary/IMG_3288.JPG"),
+  require("./images/apiary/IMG_1313.JPG"),
+  require("./images/apiary/IMG_1315.JPG"),
+  require("./images/apiary/IMG_1319.JPG"),
+  require("./images/apiary/IMG_1324.JPG"),
+  require("./images/apiary/IMG_1529.JPG"),
+];
+
+const communityImages = [
+  require("./images/community/IMG_1157.JPG"),
+  require("./images/community/IMG_1158.JPG"),
+  require("./images/community/IMG_1159.JPG"),
+  require("./images/community/IMG_1160.JPG"),
+  require("./images/community/IMG_1163.JPG"),
+  require("./images/community/IMG_1166.JPG"),
+  require("./images/community/IMG_9493.JPG"),
+  require("./images/community/LocalCommunityInvolvement.JPG"),
+  require("./images/community/IMG_3007.JPG"),
 ];
 
 function App() {
@@ -38,17 +84,17 @@ function App() {
       <span id="ABOUT US"></span>
       <InfoTitle black="WHO WE" green="ARE" margin="15px" />
       <ParagraphInfo>
-        Lukango Tree Conservancy Limited (LuTreeCo) is an African social enterprise that conserves trees
-        and shrubs that are native to tropical Africa, with emphasis on
-        threatened species. We develop novel value chains that not only emerge
-        from, but also support and advance, our conservation goals. We will
-        raise the profile of flora biodiversity conservation and restoration in
-        tropical Africa.
+        Lukango Tree Conservancy Limited (LuTreeCo) is an African social
+        enterprise that conserves trees and shrubs that are native to tropical
+        Africa, with emphasis on threatened species. We develop novel value
+        chains that not only emerge from, but also support and advance, our
+        conservation goals. We will raise the profile of flora biodiversity
+        conservation and restoration in tropical Africa.
         <br />
-        LuTreeCo is located on Bunjako island, in Uganda,
-        approximately 60 miles from Kampala by road. We are 100% solar powered
-        and have a permanent water supply. LuTreeCo is a proud member of
-        Botanical Gardens Conservation International (BGCI; BGCN# 5390).
+        LuTreeCo is located on Bunjako island, in Uganda, approximately 60 miles
+        from Kampala by road. We are 100% solar powered and have a permanent
+        water supply. LuTreeCo is a proud member of Botanical Gardens
+        Conservation International (BGCI; BGCN# 5390).
       </ParagraphInfo>
       <Space height="25px" />
       <div
@@ -82,17 +128,19 @@ function App() {
             weight={"normal"}
             icon={require("./images/icons/green/pinetree.png")}
           >
-            Mature seedlings are planted either 
-            on site in our species-rich forest of future 
-            mother trees or are utilized in LuTreeCo driven community planting efforts.
+            Mature seedlings are planted either on site in our species-rich
+            forest of future mother trees or are utilized in LuTreeCo driven
+            community planting efforts.
           </IconInfo>
         </BarCard>
         <div className="mt-3">
-          <NurserySlider id="nurserySlider" />
+          <Slideshow3 id="nurserySlider" images={nurseryImages} />
         </div>
       </BackgroundImage>
       <span id="NATIVE-FOREST"></span>
-      <SubInfoTitle>A species rich native forest of future mother trees.</SubInfoTitle>
+      <SubInfoTitle>
+        A species rich native forest of future mother trees.
+      </SubInfoTitle>
       <BackgroundImage image={require("./images/Home/IMG_2734.JPG")}>
         <BarCard
           height={"tall"}
@@ -137,7 +185,7 @@ function App() {
           </IconInfo>
         </BarCard>
         <div className="mt-3">
-          <ForestSlider id="forestSlider" />
+          <Slideshow3 id="forestSlider" images={forestImages} />
         </div>
       </BackgroundImage>
       <span id="APIARY"></span>
@@ -155,7 +203,7 @@ function App() {
           </p>
         </div>
         <div className="mt-2">
-          <ApiarySlider id="apiarySlider" />
+          <Slideshow3 id="apiarySlider" images={apiaryImages} />
         </div>
       </BackgroundImage>
       <Space height="25px" />
@@ -186,7 +234,7 @@ function App() {
           </p>
         </div>
         <div className="mt-2">
-          <CommunitySlider id="communitySlider" />
+          <Slideshow3 id="communitySlider" images={communityImages} />
         </div>
       </BackgroundImage>
 
@@ -258,13 +306,25 @@ function App() {
             title={"LinkedIn"}
             icon={require("./images/icons/contact/linkedin.png")}
           >
-            <a className="about_link" target="_blank" href="https://www.linkedin.com/company/lukango-tree-conservancy-lutreeco/">lukango-tree-conservancy-lutreeco</a>
+            <a
+              className="about_link"
+              target="_blank"
+              href="https://www.linkedin.com/company/lukango-tree-conservancy-lutreeco/"
+            >
+              lukango-tree-conservancy-lutreeco
+            </a>
           </IconTitledInfo>
           <IconTitledInfo
             title={"Facebook"}
             icon={require("./images/icons/contact/facebook.png")}
           >
-            <a className="about_link" target="_blank" href="https://www.facebook.com/LuTreeCo">LutreeCo</a>
+            <a
+              className="about_link"
+              target="_blank"
+              href="https://www.facebook.com/LuTreeCo"
+            >
+              LutreeCo
+            </a>
           </IconTitledInfo>
         </ContactInfo>
         <ContactForm title={"Send us a Message"} />

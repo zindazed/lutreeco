@@ -4,58 +4,8 @@ import "./css/Slideshow1.css";
 class Slideshow1 extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      currentIndex: 0,
-    };
+    this.state = {};
   }
-
-  componentDidMount() {
-    this.timerID = setInterval(() => {
-      this.setState((prevState) => ({
-        currentIndex: (prevState.currentIndex + 1) % this.props.images.length,
-      }));
-    }, 5000);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
-
-  componentDidUpdate() {
-    clearInterval(this.timerID);
-    this.timerID = setInterval(() => {
-      this.setState((prevState) => ({
-        currentIndex: (prevState.currentIndex + 1) % this.props.images.length,
-      }));
-    }, 5000);
-  }
-
-  handlePrevClick = () => {
-    this.setState((prevState) => ({
-      currentIndex:
-        (prevState.currentIndex - 1 + this.props.images.length) %
-        this.props.images.length,
-    }));
-  };
-
-  handleNextClick = () => {
-    this.setState((prevState) => ({
-      currentIndex: (prevState.currentIndex + 1) % this.props.images.length,
-    }));
-  };
-
-  handleKeyDown = (event) => {
-    switch (event.key) {
-      case "ArrowLeft":
-        this.handlePrevClick();
-        break;
-      case "ArrowRight":
-        this.handleNextClick();
-        break;
-      default:
-        break;
-    }
-  };
 
   render() {
     var height = "";
@@ -78,7 +28,6 @@ class Slideshow1 extends Component {
       paddingLeft = "200px";
       paddingRight = "200px";
     }
-    const { currentIndex } = this.state;
     return (
       <div className="w-100" style={{ height: height }}>
         <div
@@ -134,7 +83,7 @@ class Slideshow1 extends Component {
             data-aos-duration="1500"
           >
             <span className="top-icon" aria-hidden="true">
-              <i class="me-1 fa fa-chevron-left"></i>
+              <i className="me-1 fa fa-chevron-left"></i>
             </span>
             <span className="visually-hidden">Previous</span>
           </button>
@@ -147,7 +96,7 @@ class Slideshow1 extends Component {
             data-aos-duration="1500"
           >
             <span className="top-icon" aria-hidden="true">
-              <i class="ms-1 fa fa-chevron-right"></i>
+              <i className="ms-1 fa fa-chevron-right"></i>
             </span>
             <span className="visually-hidden">Next</span>
           </button>
