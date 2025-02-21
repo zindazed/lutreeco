@@ -1,8 +1,11 @@
 import React from "react";
 import "./css/InfoTitle.css";
+import 'animate.css/animate.min.css';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 function InfoTitle({ black, green, margin }) {
   return (
+    <AnimationOnScroll animateIn="animate__bounceInDown" animateOnce>
     <div
       style={{ marginTop: margin }}
       data-aos="fade-down"
@@ -19,6 +22,7 @@ function InfoTitle({ black, green, margin }) {
         <div className="mx-auto my-2"></div>
       </h4>
     </div>
+    </AnimationOnScroll>
   );
 }
 

@@ -45,39 +45,17 @@ class ContactForm extends Component {
     });
   };
 
-  formSubmit = (e) => {
-    e.preventDefault();
 
-    let data = {
-      name: this.state.name,
-      number: this.state.number,
-      contact: this.state.contact,
-      subject: this.state.subject,
-      msg: this.state.msg,
-    };
+  handleSendEmail = () => {
+    const email = 'lukangotreeconservancy@gmail.com';  // Replace with the recipient's email address
+    const subject = this.state.subject;
+    const body = `Name: ${this.state.name}\nPhone Number: ${this.state.number}\n\nMessage: ${this.state.msg}`;
 
-    axios
-      .post("/api/forma", data)
-      .then((res) =>
-        this.setState(
-          {
-            sent: true,
-          },
-          this.resetForm()
-        )
-      )
-      .catch(() => {
-        console.log("message not sent");
-        this.setState({
-          sent: 0,
-        });
-        setTimeout(() => {
-          this.setState({
-            sent: false,
-          });
-        }, 3000);
-      });
-  };
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Open the user's default email client with the pre-filled email
+    window.location.href = mailtoLink;
+  }
 
   //for reseting
   resetForm = () => {
@@ -145,7 +123,7 @@ class ContactForm extends Component {
             >
               {this.state.sent === 0 ? "Server Down" : "Message Sent"}
             </p>
-            <button type="submit" className="d-block contactForm-button">
+            <button href="javascript:void(0);" onClick={this.handleSendEmail} className="d-block contactForm-button">
               Submit
             </button>
           </form>

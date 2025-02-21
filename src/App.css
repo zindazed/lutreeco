@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@500&display=swap');
 
 h5,
 h2,
+h4,
+h5,
 h3 {
   font-family: "Montserrat", sans-serif;
   /* font-family: 'Poppins', sans-serif; */
+}
+
+.popin{
+  font-family: 'Poppins', sans-serif;
 }
 
 * {
@@ -206,7 +213,7 @@ img {
 }
 
 .navbar {
-  background-color: red !important;
+  background-color: white !important;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -228,4 +235,14 @@ img {
   .email{
     font-size: 17px;
   }
+}
+
+
+.readMore{
+  transition: 0.5s;
+}
+
+.readMore:hover {
+  transition: 0.5s;
+  transform: translateY(10px); 
 }
