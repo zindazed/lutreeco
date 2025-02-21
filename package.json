@@ -2,7 +2,7 @@
   "name": "lutreeco",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://gmail-service-hc9v.onrender.com:10000",
+  "proxy": "http://localhost:10000/",
   "dependencies": {
     "@iconify/react": "^4.1.1",
     "@popperjs/core": "^2.11.6",
